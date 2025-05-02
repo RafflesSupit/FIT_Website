@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIT Competition 2025 - Winner Announcement</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="/icons/logo-fit.png" type="image/png">
-    <link rel="apple-touch-icon" href="/icons/logo-fit.png">
+    <link rel="icon" href="./icons/logo-fit.png" type="image/png">
+    <link rel="apple-touch-icon" href="./icons/logo-fit.png">
     <link rel="stylesheet" href="./styles/register_page.css">
     <link rel="stylesheet" href="./styles/about-us.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -23,8 +26,8 @@
                     },
                     keyframes: {
                         'fade-in-up': {
-                          '0%': { opacity: '0', transform: 'translateY(30px)' },
-                          '100%': { opacity: '1', transform: 'translateY(0)' },
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
                         },
                     },
                     animation: {
@@ -35,36 +38,54 @@
         };
     </script>
 </head>
+
 <body class="text-white font-sansation">
     <div class="bg-all">
         <header class="flex justify-between items-center p-6 px-8 md:px-16 shadow-md relative z-50">
             <div class="flex items-center space-x-2">
-                <a href="index.html"><img src="/img/FIT-Logo.png" alt="Logo" class="w-24 md:w-28"></a>
+                <a href="index.html"><img src="./img/FIT-Logo.png" alt="Logo" class="w-24 md:w-28"></a>
             </div>
-        
+
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex space-x-10 font-bold items-center">
-                <a href="index.html" class="bg-clip-text hover:underline hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">HOME</a>
+                <a href="index.html"
+                    class="bg-clip-text hover:underline hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">HOME</a>
                 <div class="relative" id="desktopDropdown">
                     <div class="group">
-                        <button id="desktopDropdownButton" class="flex items-center space-x-2 focus:outline-none text-white bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 group-[.active]:text-transparent group-[.active]:bg-gradient-to-r group-[.active]:from-pink-400 group-[.active]:via-purple-400 group-[.active]:to-blue-400 transition-all duration-300 hover:underline">
+                        <button id="desktopDropdownButton"
+                            class="flex items-center space-x-2 focus:outline-none text-white bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 group-[.active]:text-transparent group-[.active]:bg-gradient-to-r group-[.active]:from-pink-400 group-[.active]:via-purple-400 group-[.active]:to-blue-400 transition-all duration-300 hover:underline">
                             <span>CATEGORY</span>
-                            <svg id="desktopTriangle" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-4 h-4 transition-transform duration-300" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"></path>
+                            <svg id="desktopTriangle" stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 512 512" class="w-4 h-4 transition-transform duration-300" height="1em"
+                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z">
+                                </path>
                             </svg>
-                        </button>                  
+                        </button>
                     </div>
-                    <div id="desktopDropdownMenu" class="absolute left-0 top-10 hidden flex-col bg-white rounded-xl shadow-lg min-w-[220px] overflow-hidden py-2 transition-all duration-300">
-                        <a href="#" class="block px-6 py-3 text-gray-700 bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Data Science</a>
-                        <a href="#" class="block px-6 py-3 text-gray-700 bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Web Development</a>
-                        <a href="#" class="block px-6 py-3 text-gray-700 bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Mobile Application</a>
-                        <a href="#" class="block px-6 py-3 text-gray-700 bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Cyber Security</a>
+                    <div id="desktopDropdownMenu"
+                        class="absolute left-0 top-10 hidden flex-col bg-white rounded-xl shadow-lg min-w-[220px] overflow-hidden py-2 transition-all duration-300">
+                        <a href="#"
+                            class="block px-6 py-3 text-gray-700 bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Data
+                            Science</a>
+                        <a href="#"
+                            class="block px-6 py-3 text-gray-700 bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Web
+                            Development</a>
+                        <a href="#"
+                            class="block px-6 py-3 text-gray-700 bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Mobile
+                            Application</a>
+                        <a href="#"
+                            class="block px-6 py-3 text-gray-700 bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Cyber
+                            Security</a>
                     </div>
-                    
+
                 </div>
-                <a href="aboutus.html" class="hover:underline bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">ABOUT US</a>
+                <a href="aboutus.html"
+                    class="hover:underline bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">ABOUT
+                    US</a>
             </nav>
-        
+
             <!-- Hamburger Button -->
             <button id="hamburger" class="flex flex-col space-y-1 md:hidden">
                 <span class="w-6 h-0.5 bg-white"></span>
@@ -72,31 +93,47 @@
                 <span class="w-6 h-0.5 bg-white"></span>
             </button>
         </header>
-        
-            <!-- Mobile Overlay -->
-            <div id="overlay" class="fixed inset-0 bg-black bg-opacity-60 hidden z-40"></div>
-            
-            <!-- Mobile Menu -->
-            <div id="mobileMenu" class="fixed text-white text-right top-0 right-0 w-40 h-full custom-bg shadow-lg transform translate-x-full transition-transform duration-300 z-50 flex flex-col p-8 space-y-6 font-bold">
-                <a href="index.html" class="block text-lg text-white bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300 pt-4">HOME</a>
-                <div class="w-full">
-                    <button id="mobileDropdownButton" class="flex justify-end space-x-2 items-center w-full text-lg">
-                        <svg id="mobileTriangle" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-5 h-5 transition-transform duration-300" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"></path>
-                        </svg>
-                        <span>CATEGORY</span>
-                    </button>                  
-                    <div id="mobileDropdownMenu" class="hidden flex flex-col space-y-2 pl-4 pt-2 text-sm">
-                        <a href="#" class="bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Data Science</a>
-                        <a href="#" class="bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Web Development</a>
-                        <a href="#" class="bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Mobile Application</a>
-                        <a href="#" class="bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Cyber Security</a>
-                    </div>
+
+        <!-- Mobile Overlay -->
+        <div id="overlay" class="fixed inset-0 bg-black bg-opacity-60 hidden z-40"></div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+            class="fixed text-white text-right top-0 right-0 w-40 h-full custom-bg shadow-lg transform translate-x-full transition-transform duration-300 z-50 flex flex-col p-8 space-y-6 font-bold">
+            <a href="index.html"
+                class="block text-lg text-white bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300 pt-4">HOME</a>
+            <div class="w-full">
+                <button id="mobileDropdownButton" class="flex justify-end space-x-2 items-center w-full text-lg">
+                    <svg id="mobileTriangle" stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 512 512" class="w-5 h-5 transition-transform duration-300" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z">
+                        </path>
+                    </svg>
+                    <span>CATEGORY</span>
+                </button>
+                <div id="mobileDropdownMenu" class="hidden flex flex-col space-y-2 pl-4 pt-2 text-sm">
+                    <a href="#"
+                        class="bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Data
+                        Science</a>
+                    <a href="#"
+                        class="bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Web
+                        Development</a>
+                    <a href="#"
+                        class="bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Mobile
+                        Application</a>
+                    <a href="#"
+                        class="bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">Cyber
+                        Security</a>
                 </div>
-                <a href="aboutus.html" class="block text-lg text-white bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">ABOUT US</a>
             </div>
-            
-        
+            <a href="aboutus.html"
+                class="block text-lg text-white bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-purple-700 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 transition-all duration-300">ABOUT
+                US</a>
+        </div>
+
+
         <!-- Winner Section -->
         <section class="px-4 py-12">
             <h2 class="text-3xl md:text-5xl font-bold text-center mb-2">Winner Announcement</h2>
@@ -104,7 +141,7 @@
             <div class="border-2 w-72 mb-16 md:mb-24 mx-auto"></div>
         </section>
 
-                
+
         <!-- <div class="swiper my-8 relative group mb-40 md:mb-48">
             <div class="swiper-button-prev ml-82 md:ml-96 top-[12%] md:top-[7%] text-white text-xs md:text-sm"></div>
             <div class="swiper-button-next mr:82 md:mr-96 top-[12%] md:top-[7%] text-white text-xs md:text-sm"></div>
@@ -159,68 +196,69 @@
                 </div>
             </div>
         </div> -->
-        
+
         <!-- Footer -->
         <footer class="footer-bg mt-32 pt-10 pb-4 text-white overflow-x-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-24">
-        
-            <!-- Main Footer Content -->
-            <div class="flex flex-col lg:flex-row justify-between items-center lg:items-start text-center lg:text-left gap-8 lg:gap-20 mb-12">
-        
-                <!-- Logo -->
-                <div class="flex justify-center lg:justify-start w-full lg:w-auto">
-                <img src="/img/Logo-Web.png" alt="Logo" class="w-40 md:w-56">
-                </div>
-        
-                <!-- Footer Sections -->
-                <div class="flex flex-col sm:flex-row gap-8 md:gap-20 text-center lg:text-left">
-        
-                <!-- Shortcut -->
-                <div>
-                    <h3 class="font-bold mb-2">Shortcut</h3>
-                    <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:underline">Category</a></li>
-                    <li><a href="aboutus.html" class="hover:underline">About Us</a></li>
-                    </ul>
-                </div>
-        
-                <!-- Contact Us -->
-                <div>
-                    <h3 class="font-bold mb-2">Contact Us</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li class="flex items-center justify-center lg:justify-start space-x-2">
-                            <img src="./icons/whatsapp.svg" alt="WhatsApp" class="w-5 h-5">
-                            <a href="http://wa.me/6281215385597"><span>Mario</span></a>
-                        </li>
-                        <li class="flex items-center justify-center lg:justify-start space-x-2">
-                            <img src="./icons/whatsapp.svg" alt="WhatsApp" class="w-5 h-5">
-                            <a href="http://wa.me/6287774571591"><span>Steven</span></a>
-                        </li>
-                    </ul>
-                </div>
-        
-                <!-- Social Media -->
-                <div>
-                    <h3 class="font-bold mb-2">Social Media</h3>
-                    <div class="flex justify-center lg:justify-start space-x-4">
-                    <a href="https://www.instagram.com/fitcompetition_2025" class="w-6 h-6">
-                        <img src="./icons/instagram.svg" alt="Instagram" class="w-full h-full">
-                    </a>
-                    <a href="https://www.tiktok.com/@fit.competition" class="w-6 h-6">
-                        <img src="./icons/tiktok.svg" alt="TikTok" class="w-full h-full">
-                    </a>
+
+                <!-- Main Footer Content -->
+                <div
+                    class="flex flex-col lg:flex-row justify-between items-center lg:items-start text-center lg:text-left gap-8 lg:gap-20 mb-12">
+
+                    <!-- Logo -->
+                    <div class="flex justify-center lg:justify-start w-full lg:w-auto">
+                        <img src="./img/Logo-Web.png" alt="Logo" class="w-40 md:w-56">
                     </div>
+
+                    <!-- Footer Sections -->
+                    <div class="flex flex-col sm:flex-row gap-8 md:gap-20 text-center lg:text-left">
+
+                        <!-- Shortcut -->
+                        <div>
+                            <h3 class="font-bold mb-2">Shortcut</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="hover:underline">Category</a></li>
+                                <li><a href="aboutus.html" class="hover:underline">About Us</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Contact Us -->
+                        <div>
+                            <h3 class="font-bold mb-2">Contact Us</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center justify-center lg:justify-start space-x-2">
+                                    <img src="./icons/whatsapp.svg" alt="WhatsApp" class="w-5 h-5">
+                                    <a href="http://wa.me/6281215385597"><span>Mario</span></a>
+                                </li>
+                                <li class="flex items-center justify-center lg:justify-start space-x-2">
+                                    <img src="./icons/whatsapp.svg" alt="WhatsApp" class="w-5 h-5">
+                                    <a href="http://wa.me/6287774571591"><span>Steven</span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div>
+                            <h3 class="font-bold mb-2">Social Media</h3>
+                            <div class="flex justify-center lg:justify-start space-x-4">
+                                <a href="https://www.instagram.com/fitcompetition_2025" class="w-6 h-6">
+                                    <img src="./icons/instagram.svg" alt="Instagram" class="w-full h-full">
+                                </a>
+                                <a href="https://www.tiktok.com/@fit.competition" class="w-6 h-6">
+                                    <img src="./icons/tiktok.svg" alt="TikTok" class="w-full h-full">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
-        
+
+                <!-- Copyright -->
+                <div class="text-center text-xs md:text-sm text-white-400 pt-4">
+                    &copy; 2025 FIT Competition All Rights Reserved
                 </div>
-        
-            </div>
-        
-            <!-- Copyright -->
-            <div class="text-center text-xs md:text-sm text-white-400 pt-4">
-                &copy; 2025 FIT Competition All Rights Reserved
-            </div>
-        
+
             </div>
         </footer>
     </div>
@@ -240,4 +278,5 @@
         });
     </script>
 </body>
+
 </html>
