@@ -1,19 +1,19 @@
 .custom-bg {
-    background: url('/img/bg-register.png') no-repeat;
-    background-size: cover;
+  background: url("../img/bg-register.png") no-repeat;
+  background-size: cover;
 }
 .landing-bg {
-    background: url('/img/bg-landing.png') no-repeat;
-    background-size: cover;
+  background: url("../img/bg-landing.png") no-repeat;
+  background-size: cover;
 }
 .carousel-bg {
-    background: url('/img/bg-carousel.png') no-repeat;
-    background-size:auto;
+  background: url("../img/bg-carousel.png") no-repeat;
+  background-size: auto;
 }
 .about-bg {
-    background: url('/img/bg-about-fit.png') no-repeat;
-    background-size:contain;
+  background: url("../img/bg-about-fit.png") no-repeat;
+  background-size: contain;
 }
 .footer-bg {
-    background-image: url('/img/bg-footer.png');
+  background-image: url("../img/bg-footer.png");
 }
